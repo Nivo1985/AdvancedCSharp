@@ -13,4 +13,10 @@ public class ChangeDetails
         get;
         set;
     }
+    
+    public bool Valid
+    {
+        get;
+        set;
+    }
 }

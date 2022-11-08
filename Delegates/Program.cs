@@ -9,15 +9,18 @@ Console.ReadKey();
 void Example1()
 {
     var change = new ChangeDetails()
-    {
+    { 
         Id = 1,
-        Name = "Name 1"
+        Name = "Name 1",
+        Valid = true
     };
     var changer = new MakeChanges();
     //changer.Proceess(change); // show what happens 
     
-    var changeUtils = new ChangeValidatedUtils();
+    var changeUtils = new ChangeUtils();
     changer.OnChangeValidated += changeUtils.SaveChangeToList;
     changer.OnChangeValidated += changeUtils.PrioritizeChange;
+    changer.OnProcessing += changeUtils.Process;
     changer.Process(change, changeUtils.DoPaperWork);
+    
 }

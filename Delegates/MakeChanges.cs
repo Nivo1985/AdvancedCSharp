@@ -3,10 +3,18 @@
 public class MakeChanges
 {
     public delegate void ChangeValidated();
-    public delegate void ProcessCompleted();
+    public delegate void ProcessCompleted(ChangeDetails changeDetails);
+    public delegate bool Processing(ChangeDetails changeDetails);
+    
     public ChangeValidated OnChangeValidated
     {
         get; 
+        set;
+    }
+
+    public Processing OnProcessing
+    {
+        get;
         set;
     }
     private bool Validate(ChangeDetails changeDetails)
@@ -26,8 +34,10 @@ public class MakeChanges
 
     public void Process(ChangeDetails changeDetails, ProcessCompleted? processCompleted = default)
     {
-        Validate(changeDetails);
-        
-        processCompleted?.Invoke();
+        if (!Validate(changeDetails)) return;
+        if (OnProcessing?.Invoke(changeDetails) == true)
+        {
+            processCompleted?.Invoke(changeDetails);
+        }
     }
 }
