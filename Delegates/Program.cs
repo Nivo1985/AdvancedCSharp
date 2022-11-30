@@ -15,7 +15,6 @@ void Example1()
         Valid = true
     };
     var changer = new MakeChanges();
-    //changer.Proceess(change); // show what happens 
     
     var changeUtils = new ChangeUtils();
     changer.OnChangeValidated += changeUtils.SaveChangeToList;

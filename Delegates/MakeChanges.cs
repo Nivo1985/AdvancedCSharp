@@ -3,8 +3,8 @@
 public class MakeChanges
 {
     public delegate void ChangeValidated();
-    public delegate void ProcessCompleted(ChangeDetails changeDetails);
     public delegate bool Processing(ChangeDetails changeDetails);
+    public delegate void ProcessCompleted(ChangeDetails changeDetails);
     
     public ChangeValidated OnChangeValidated
     {
