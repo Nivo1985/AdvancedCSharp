@@ -16,6 +16,17 @@ public class ChangeUtils
     {
         Console.WriteLine("Do paper work for {0}", changeDetails.Name);
     }
+    
+    public void CheckPaperWork(ChangeDetails changeDetails)
+    {
+        Console.WriteLine("Check paper work for {0}", changeDetails.Name);
+    }
+    
+    public void CleanUpAfterPaperWork(ChangeDetails changeDetails)
+    {
+        Console.WriteLine("Clean up after paper work for {0}", changeDetails.Name);
+    }
+    
 
     public bool Process(ChangeDetails changeDetails)
     {

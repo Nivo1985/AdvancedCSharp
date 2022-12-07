@@ -2,17 +2,17 @@
 
 public class MakeChanges
 {
-    public delegate void ChangeValidated();
-    public delegate bool Processing(ChangeDetails changeDetails);
-    public delegate void ProcessCompleted(ChangeDetails changeDetails);
+    // public delegate void ChangeValidated();
+    // public delegate bool Processing(ChangeDetails changeDetails);
+    // public delegate void ProcessCompleted(ChangeDetails changeDetails);
     
-    public ChangeValidated OnChangeValidated
+    public Action OnChangeValidated
     {
         get; 
         set;
     }
 
-    public Processing OnProcessing
+    public Func<ChangeDetails, bool> OnProcessing
     {
         get;
         set;
@@ -32,7 +32,7 @@ public class MakeChanges
         return true;
     }
 
-    public void Process(ChangeDetails changeDetails, ProcessCompleted? processCompleted = default)
+    public void Process(ChangeDetails changeDetails, Action<ChangeDetails>? processCompleted = default)
     {
         if (!Validate(changeDetails)) return;
         if (OnProcessing?.Invoke(changeDetails) == true)
