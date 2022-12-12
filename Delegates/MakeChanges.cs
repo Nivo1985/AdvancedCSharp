@@ -2,10 +2,6 @@
 
 public class MakeChanges
 {
-    // public delegate void ChangeValidated();
-    // public delegate bool Processing(ChangeDetails changeDetails);
-    // public delegate void ProcessCompleted(ChangeDetails changeDetails);
-    
     public Action OnChangeValidated
     {
         get; 
@@ -23,7 +19,7 @@ public class MakeChanges
         {
             ArgumentNullException.ThrowIfNull(changeDetails);
         }
-        catch (Exception e)
+        catch
         {
             return false;
         }

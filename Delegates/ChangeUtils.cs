@@ -27,7 +27,6 @@ public class ChangeUtils
         Console.WriteLine("Clean up after paper work for {0}", changeDetails.Name);
     }
     
-
     public bool Process(ChangeDetails changeDetails)
     {
         return changeDetails.Valid;
