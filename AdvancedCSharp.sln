@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Dele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overloading", "Overloading\Overloading.csproj", "{79652403-0BB2-4077-9EB3-6476B9505AAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{FD1742C2-EF10-4646-A254-F2B53D459D70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{79652403-0BB2-4077-9EB3-6476B9505AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79652403-0BB2-4077-9EB3-6476B9505AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79652403-0BB2-4077-9EB3-6476B9505AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1742C2-EF10-4646-A254-F2B53D459D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1742C2-EF10-4646-A254-F2B53D459D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1742C2-EF10-4646-A254-F2B53D459D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1742C2-EF10-4646-A254-F2B53D459D70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
