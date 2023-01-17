@@ -1,5 +1,4 @@
-﻿
-namespace Extensions;
+﻿namespace Extensions;
 
 public class Person
 {

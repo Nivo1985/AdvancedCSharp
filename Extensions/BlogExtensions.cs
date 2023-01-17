@@ -11,7 +11,7 @@ public static class BlogExtensions
     {
         return $"Sum of {x} and {y} equals {x + y}";
     }
-    public static string GetIntroduction(this Person? person)
+    public static string GetIntroduction(this Person person)
     {
         return $"EXT -  Hello from: {person.FirstName} {person.LastName}.";
     }
