@@ -21,7 +21,9 @@ var orderSummaries = orders.Select(o => new
 
 
 var inst3 = new { id = 1, value = 10 };
-var inst4 = inst3 with { value = 12 }; 
+var inst4 = inst3 with { value = 12 };
+Console.WriteLine(inst3.ToString());
+Console.WriteLine(inst4.ToString());
 
 var i = 1;
 
