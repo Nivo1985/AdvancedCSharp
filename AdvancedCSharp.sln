@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousTypes", "AnonymousTypes\AnonymousTypes.csproj", "{F559F279-5F61-4806-8C50-2434FD2D9374}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatching", "PatternMatching\PatternMatching.csproj", "{3B51DB75-F349-4C77-B5D3-23FEF375FF32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{F559F279-5F61-4806-8C50-2434FD2D9374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F559F279-5F61-4806-8C50-2434FD2D9374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F559F279-5F61-4806-8C50-2434FD2D9374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B51DB75-F349-4C77-B5D3-23FEF375FF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B51DB75-F349-4C77-B5D3-23FEF375FF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B51DB75-F349-4C77-B5D3-23FEF375FF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B51DB75-F349-4C77-B5D3-23FEF375FF32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
