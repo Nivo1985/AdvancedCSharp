@@ -2,7 +2,7 @@
 
 namespace PatternMatching.Demos;
 
-public class DemoSwitchExprassion 
+public class DemoSwitchExpression 
 {
     public void Demo1()
     {

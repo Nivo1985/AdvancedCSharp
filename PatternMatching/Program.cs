@@ -3,15 +3,20 @@
 using PatternMatching;
 using PatternMatching.Demos;
 
-// var demos = new DemosTypePattern();
-// demos.Demo1();
-// demos.Demo2();
+var demosTypePattern = new DemosTypePattern();
+demosTypePattern.Demo1();
+demosTypePattern.Demo2();
 
-// var demos = new DemoSwitchExprassion();
-// demos.Demo1();
+var demosSwitchExpression = new DemoSwitchExpression();
+demosSwitchExpression.Demo1();
 
-var demos = new PositionalPattern();
-demos.Demo1();
-demos.Demo2();
+var demosPositionalPattern = new PositionalPattern();
+demosPositionalPattern.Demo1();
+demosPositionalPattern.Demo2();
+
+
+var demosPropertyPattern = new DemosPropertyPattern();
+demosPropertyPattern.Demo1();
+demosPropertyPattern.Demo2();
 
 Console.ReadKey();
